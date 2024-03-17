@@ -1,2 +1,4 @@
-secrets.yaml
+screts.yaml
 test.txt
+.storage
+.gitignore
