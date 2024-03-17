@@ -1,0 +1,42 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+device_tracker:
+  - platform: custom_bbox
+    password: !secret bbox_password # mandatory
+    host: mabbox.bytel.fr # optional, some users reported it should not be added when using a different subnet (10.x.x.x)
+  
+sensor: !include sensors.yaml
+
+# creates my bollean for HK
+input_boolean:
+  homekit_sensors_update:
+    name: Collection of HomeKit Sensors
+    initial: off
+    
+# Homekit config file
+homekit:
+  - name: HA - Bridge
+    port: 51823
+    filter:
+        include_entities:
+          - sensor.meteo_exterieure_temperature
+          - sensor.meteo_exterieure_humidity
+          - input_boolean.homekit_sensors_update
+          - media_player.samsung_the_serif_55
+          
+#shell_command:
+#  push_to_github: /bin/bash /config/push_updates.sh

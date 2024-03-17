@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "title": "Maison",
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Maison",
+          "cards": [
+            {
+              "square": false,
+              "type": "grid",
+              "columns": 1,
+              "cards": [
+                {
+                  "show_current": true,
+                  "show_forecast": true,
+                  "type": "weather-forecast",
+                  "entity": "weather.meteo_exterieure",
+                  "forecast_type": "hourly"
+                },
+                {
+                  "type": "thermostat",
+                  "entity": "climate.entree",
+                  "features": [
+                    {
+                      "type": "climate-hvac-modes",
+                      "hvac_modes": [
+                        "auto",
+                        "heat",
+                        "off"
+                      ]
+                    }
+                  ],
+                  "forecast_type": "hourly"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.homepodmini_chambre_temperature"
+                    },
+                    {
+                      "entity": "climate.entree",
+                      "name": "Entrée température",
+                      "secondary_info": "none"
+                    },
+                    {
+                      "entity": "sensor.meteo_exterieure_temperature"
+                    },
+                    {
+                      "entity": "sensor.meteo_exterieure_humidity"
+                    },
+                    {
+                      "entity": "sensor.homepodmini_chambre_humidity"
+                    },
+                    {
+                      "entity": "sensor.mold_indicator"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.sejour",
+                "light.entree",
+                "light.salon",
+                "light.cuisine",
+                "light.chambre"
+              ],
+              "title": "Maison",
+              "state_color": true
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "light.salon_2"
+                    },
+                    {
+                      "entity": "light.plafonnier_salon"
+                    },
+                    {
+                      "entity": "light.bibliotheque",
+                      "icon": "mdi:bookshelf"
+                    },
+                    {
+                      "entity": "light.multiprise_meross_mss425f_switch_3_2"
+                    },
+                    {
+                      "entity": "switch.multiprise_meross_mss425f_main_channel"
+                    },
+                    {
+                      "entity": "switch.multiprise_meross_mss425f_switch_1"
+                    },
+                    {
+                      "entity": "switch.multiprise_meross_mss425f_switch_2"
+                    },
+                    {
+                      "entity": "switch.multiprise_meross_mss425f_switch_4"
+                    },
+                    {
+                      "entity": "switch.multiprise_meross_mss425f_usb"
+                    },
+                    {
+                      "entity": "remote.samsung_the_serif_55"
+                    }
+                  ],
+                  "title": "Salon"
+                },
+                {
+                  "type": "media-control",
+                  "entity": "media_player.samsung_the_serif_55"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "square": false,
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "light.plafonnier_entree"
+                    }
+                  ],
+                  "title": "Entrée"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.chambre"
+                },
+                {
+                  "entity": "light.plafonnier_chambre"
+                }
+              ],
+              "title": "Chambre"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.cuisine"
+                },
+                {
+                  "entity": "light.plafonnier_cuisine"
+                },
+                {
+                  "entity": "light.evier",
+                  "icon": "mdi:countertop-outline"
+                }
+              ],
+              "title": "Cuisine"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.hacs"
+                }
+              ],
+              "title": "Capteur"
+            }
+          ],
+          "icon": "mdi:home"
+        },
+        {
+          "subview": true,
+          "title": "Salon",
+          "path": "salon",
+          "cards": []
+        }
+      ]
+    }
+  }
+}

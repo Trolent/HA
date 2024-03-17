@@ -1,0 +1,17 @@
+#sensor to determine the mold apparition risk
+  - platform: mold_indicator
+    indoor_temp_sensor: sensor.homepodmini_chambre_temperature
+    indoor_humidity_sensor: sensor.homepodmini_chambre_humidity
+    outdoor_temp_sensor: sensor.meteo_exterieure_temperature
+    calibration_factor: 2.0
+
+  - platform: custom_bbox
+    password: !secret bbox_password # mandatory
+    host: mabbox.bytel.fr  # optional, some users reported it should not be added when using a different subnet (10.x.x.x)
+    monitored_variables: # pick the sensors you need below
+      - down_max_bandwidth
+      - up_max_bandwidth
+      - current_down_bandwidth
+      - current_up_bandwidth
+      - uptime
+      - number_of_reboots

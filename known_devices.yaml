@@ -1,0 +1,77 @@
+
+philips_hue:
+  name: Philips-hue
+  mac: EC:B5:FA:1F:8D:87
+  icon:
+  picture:
+  track: true
+
+thermostat:
+  name: Thermostat
+  mac: 70:EE:50:70:97:2E
+  icon:
+  picture:
+  track: true
+
+raspberrypi:
+  name: raspberrypi
+  mac: E4:5F:01:CC:72:7D
+  icon:
+  picture:
+  track: true
+
+host_001:
+  name: Host-001
+  mac: 48:E1:E9:8A:78:46
+  icon:
+  picture:
+  track: true
+
+shellyswitch25_1f88ba:
+  name: shellyswitch25-1F88BA
+  mac: 98:CD:AC:1F:88:BA
+  icon:
+  picture:
+  track: true
+
+shellyswitch25_2bace8:
+  name: shellyswitch25-2BACE8
+  mac: 98:CD:AC:2B:AC:E8
+  icon:
+  picture:
+  track: true
+
+shellyswitch25_1e1e99:
+  name: shellyswitch25-1E1E99
+  mac: 98:CD:AC:1E:1E:99
+  icon:
+  picture:
+  track: true
+
+shellyswitch25_2bb0f9:
+  name: shellyswitch25-2BB0F9
+  mac: 98:CD:AC:2B:B0:F9
+  icon:
+  picture:
+  track: true
+
+entree:
+  name: Entree
+  mac: 50:BC:96:01:95:E0
+  icon:
+  picture:
+  track: true
+
+chambre:
+  name: Chambre
+  mac: F4:34:F0:3A:55:36
+  icon:
+  picture:
+  track: true
+
+host_003:
+  name: Host-003
+  mac: 3E:E6:52:A5:9D:B3
+  icon:
+  picture:
+  track: true

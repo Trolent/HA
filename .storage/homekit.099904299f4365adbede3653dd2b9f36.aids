@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "homekit.099904299f4365adbede3653dd2b9f36.aids",
+  "data": {
+    "allocations": {
+      "input_boolean.input_boolean.homekit_sensors_update": 202316802,
+      "openweathermap.sensor.48.88875154902896-2.3258239030838017-temperature": 2477457669,
+      "openweathermap.sensor.48.88875154902896-2.3258239030838017-humidity": 316194096,
+      "samsungtv.media_player.10e0e370-c9d9-4df4-ada6-0b84ea5e6de3": 4126346991
+    }
+  }
+}

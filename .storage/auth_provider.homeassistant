@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "test",
+        "password": "JDJiJDEyJFk0c016LmdEalRlVTYuN2EvNjZ5emUucnVQZ3lRS21HREdaT0pkNHIzY2FiLm9NUmhZNkRL"
+      },
+      {
+        "username": "troplent",
+        "password": "JDJiJDEyJFpWa1lTTEpENlhKOUtpLjhqY1l6Tk92bXdUc2k2M3pPTWpCbGpCcnB3SUhmWGhETlF4MGhT"
+      }
+    ]
+  }
+}
